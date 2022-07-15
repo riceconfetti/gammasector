@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+:root {
+  --main-accent-color: rgb(238, 204, 101);
+  --main-accent-color_15: rgba(238, 204, 101, 0.15);
+  --main-accent-color_80: rgba(238, 204, 101, 0.8);
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #000;
+  font-family: 'Bai Jamjuree';
+  font-size: 16px;
+  color: #fff;
+  margin: 0px;
+  position: absolute;
+}
+
+nav {
+  display: grid;
+  background: rgba(0, 0, 0, 0);
+  grid-template-columns: 100px auto;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100px;
+  transition: 0.5s;
+}
+
+nav .logo {
+  margin: auto;
+  height: 30px;
+}
+
+nav .logo svg {
+  filter: drop-shadow(0px 0px 3px var(--main-accent-color_80));
+}
+
+nav ul {
+  font-size: 10pt;
+  display: flex;
+  gap: 60px;
+  list-style-type: none;
+  align-items: center;
+  margin: 0px 35px 0px 0px;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-family: 'Audiowide';
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 10px;
+  color: white;
+  transition: 0.2s;
+}
+
+nav ul a:hover {
+  color: var(--main-accent-color);
+  filter: drop-shadow(0px 0px 5px var(--main-accent-color));
+}
+
+nav ul li.active a {
+  color: var(--main-accent-color);
+  filter: drop-shadow(0px 0px 5px var(--main-accent-color));
+}
+
+.main {
+  padding: 5vw;
+  margin: 0px;
+  position: absolute;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.btn {
+  --b: 1px;
+  --c: #EECC65;
+  --w: 10px;
+  border: var(--b) solid transparent;
+  --g: #0000 90deg, var(--c) 0;
+  background:
+    conic-gradient(from 90deg at top var(--b) left var(--b), var(--g)) 0 0,
+    conic-gradient(from 180deg at top var(--b) right var(--b), var(--g)) 100% 0,
+    conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--g)) 0 100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--g)) 100% 100%;
+  background-size: var(--w) var(--w);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  font-family: 'Chakra Petch';
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  padding: .75em 1.5em;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 5px var(--main-accent-color));
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  top: -100px;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-text {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  font-family: 'Audiowide';
+  text-transform: uppercase;
+}
+
+.hero-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-family: 'ChakraPetch-SemiBold', 'Chakra Petch';
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+#hp-background {
+  position: absolute;
+  top: -55px;
+  left: 0px;
+  width: 100vw;
+  z-index: -99;
+}
+
+#description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3px 3em 0px;
+}
+
+#description h2 {
+  font-family: 'Chakra Petch';
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 10px;
+  font-size: 16px;
+}
+
+#description p {
+  font-family: 'Bai Jamjuree';
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 40px;
+}
+
+#description .btn {
+  margin-left: auto;
+  font-family: 'Chakra Petch';
+  font-weight: 600;
+  font-size: 12pt;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.underground {
+  margin-top: 50px;
+  padding: 3em;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+}
+
+.underground .ug_audio {
+  background: rgba(18, 16, 16, 1);
+  grid-row: 1 /3;
+  width: 40vw;
+  padding: 2.5vw;
+}
+
+.underground .ug_audio .ug_stamps {
+  display: flex;
+  text-transform: uppercase;
+  margin: 0px;
+  justify-content: space-between;
+  font-family: 'Chakra Petch';
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 3.5px;
+}
+
+.underground .ug_audio .ug_stamps p {
+  margin: 0;
+}
+
+.underground .ug_audio .ug_speaker {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Audiowide';
+  font-size: 14px;
+  letter-spacing: calc(.35*14px);
+}
+
+.underground .ug_audio .ug_waveform {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px 0px;
+}
+
+.underground .ug_audio .ug_waveform .ug_bar {
+  background-color: var(--main-accent-color);
+  height: 50px;
+  width: 2px;
+  box-shadow: 0px 0px 10.915862083435059px 0px var(--main-accent-color);
+}
+
+.underground .ug_desc {
+  text-align: right;
+  text-transform: uppercase;
+  font-family: 'Chakra Petch';
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: calc(.35*20px);
+}
+
+.underground .ug_quote {
+  font-family: 'Chakra Petch';
+  font-weight: 300;
+  font-size: 20px;
+  text-align: right;
+  margin: 0px;
+  color: var(--main-accent-color);
+  padding: 40px;
+  background: var(--main-accent-color_15);
+  border-right: 2px solid var(--main-accent-color);
+}
+
+.heading {
+  text-transform: uppercase;
+  position: relative;
+  color: #fff;
+  margin: 80px 0px;
+  margin-bottom: 30px;
+}
+
+.heading h1 {
+  font-family: 'Audiowide';
+  font-size: 48px;
+  margin: 0;
+  letter-spacing: 10px;
+  text-shadow: 0px 0px 10px var(--main-accent-color);
+}
+
+.heading p {
+  font-family: 'Bai Jamjuree';
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 10px;
+}

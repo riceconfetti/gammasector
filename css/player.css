@@ -1,0 +1,95 @@
+.player_main .ship {
+display: flex
+}
+.player_main .ship img{
+   position: relative;
+   width: 50vw;
+   z-index: -99;
+ }
+
+ .player_main .crew {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .player_main .crew .pc {
+   text-align: center;
+ }
+
+ .player_main .crew .pc img{
+   width: 10vw;
+ }
+
+/* Sign Up Page CSS*/
+.su_main {
+  color: var(--main-accent-color);
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.su_main form {
+  width: 90vw;
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  font-family: 'Chakra Petch';
+}
+
+input, textarea, select {
+  background: rgba(238, 204, 101, 0.15);
+  font-family: 'Chakra Petch';
+  border: none;
+  color: white;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 15px 0px;
+  display: block;
+  border-left: 2px solid rgb(238, 204, 101);
+}
+
+.su_main form .su_input {
+  width: 18em;
+}
+
+.su_main form .su_tarea {
+  flex-basis: 100%;
+}
+
+.su_main form textarea {
+  width: 100%;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.su_main form .su_submit {
+  flex-basis: 100%;
+}
+
+.su_main form .su_submit input {
+  float: right;
+  font-family: 'Chakra Petch';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  width: 145px;
+  margin: 0px;
+  height: 64px;
+  background: var(--main-accent-color);
+  color: #000;
+  min-width: 0;
+  clip-path: polygon(0px 0px, 129px 0, 145px 16px, 145px 64px, 16px 64px, 0px 48px);
+  transition:0.5s;
+}
+
+.su_main form .su_submit input:hover {
+  background: rgba(238, 204, 101, 0.15);
+  text-shadow: 0px 0px 5px rgba(238, 204, 101, 1);
+  color: var(--main-accent-color);
+}

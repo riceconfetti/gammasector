@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 366 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M0,48.246L0,0L177,0L177,16L173,20L173,44L177,48L177,64L16,64L0,48.246Z" style="fill:rgb(238,204,101);"/>
+    <g transform="matrix(1,0,0,1,-6.0154,10.3921)">
+        <text x="46.723px" y="27.208px" style="font-family:'ChakraPetch-SemiBold', 'Chakra Petch';font-weight:600;font-size:16px;">ENTER HERE</text>
+    </g>
+    <path d="M181,64L181,48L177,44L177,20L181,16L181,0L362,0L362,16L366,20L366,44L362,48L362,64L181,64Z" style="fill:rgb(1,1,1);"/>
+    <g transform="matrix(1,0,0,1,176.985,10.3921)">
+        <text x="46.723px" y="27.208px" style="font-family:'ChakraPetch-SemiBold', 'Chakra Petch';font-weight:600;font-size:16px;fill:white;">LEARN MORE</text>
+    </g>
+</svg>
